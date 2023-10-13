@@ -1,0 +1,523 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  color: #333;
+  padding: 10px;
+}
+
+/* Mostrar a navegação esquerda para resoluções maiores */
+.left-nav {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-family: 'Play', sans-serif;
+}
+
+.left-nav a {
+  color: #333;
+  text-decoration: none;
+  padding: 10px;
+}
+
+/* Ajustar o estilo do logo para resoluções maiores */
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  width: 230px; /* Ajustar o tamanho da imagem do logotipo para telas maiores */
+}
+
+.social-icon img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px 0;
+}
+
+.left-nav.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left-nav li {
+  padding: 10px;
+}
+
+/* Ajustar o estilo da navegação direita para resoluções maiores */
+.social-media {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px; /* Adicionar espaço à direita para separar dos ícones */
+}
+
+
+/* Media query para estilizar o menu responsivo */
+@media screen and (max-width: 768px) {
+  .left-nav {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .social-media {
+    display: flex;
+  }
+
+  .social-icon {
+    margin-right: 20px;
+  }
+
+  .left-nav.active {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .left-nav.active li {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .logo {
+    justify-content: center;
+  }
+
+  .logo img {
+    width: 200px;
+  }
+}
+
+/* Media query para telas menores que 768 pixels */
+@media screen and (min-width: 769px) {
+  .menu-icon {
+    display: block; /* Exibe o ícone do menu */
+    cursor: pointer;
+  }
+
+  .left-nav {
+    display: flex; /* Exibe a navegação à esquerda */
+  }
+
+  .social-media {
+    display: flex; /* Exibe os ícones de redes sociais no menu */
+  }
+
+  .left-nav.active {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .left-nav li {
+    padding: 0 10px;
+  }
+
+  .logo {
+    justify-content: flex-start; /* Alinha o logotipo à esquerda */
+  }
+
+  .logo img {
+    width: 230px; /* Ajusta o tamanho da imagem do logotipo para telas maiores */
+  }
+
+  /* Ajusta o tamanho dos ícones para telas maiores */
+  .social-icon img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* Estilo para a tela de navegação em dispositivos móveis */
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 60px;
+  overflow: hidden;
+  font-size: 21px; /* Aumentar o tamanho de fonte desejado */
+  font-family: 'Play', sans-serif;
+}
+
+
+  .mobile-nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+
+  .no-scrollbar {
+  overflow-x: hidden;
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+
+/* Estilo para a tela de navegação em dispositivos móveis */
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Adicionando alinhamento vertical dos links */
+  background-color: #fff; /* Alterando a cor de fundo para branco (#fff) */
+  color: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999; /* Ajuste o z-index para garantir que o menu fique acima de outros elementos */
+}
+
+
+.mobile-nav a {
+  color: #333; /* Alterando a cor dos links para preto (#333) */
+  text-decoration: none;
+  padding: 10px;
+  display: block; /* Adicionando essa propriedade para que os links ocupem a largura total disponível */
+  text-align: center; /* Centralizando o texto dos links */
+}
+
+/* Estilo para o ícone "X" */
+  .close-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 30px; /* Aumentando o tamanho do ícone "X" para 30px */
+    cursor: pointer;
+    color: black; /* Mantendo a cor preta (black) do ícone */
+  }
+
+/* Estilo para mostrar a tela de navegação em dispositivos móveis quando o menu é clicado */
+.mobile-nav.active {
+  display: flex;
+}
+
+/* Exibir os ícones das redes sociais quando a resolução for menor que 768px */
+/* Media query para telas maiores que 768 pixels */
+@media screen and (min-width: 769px) {
+  .menu-icon {
+    display: block; /* Exibe o ícone do menu */
+    cursor: pointer;
+  }
+
+  .left-nav {
+    display: flex; /* Exibe a navegação à esquerda */
+  }
+
+  .social-media {
+    display: flex; /* Exibe os ícones de redes sociais no menu */
+  }
+
+  .left-nav.active {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .left-nav li {
+    padding: 0 10px;
+  }
+
+  .logo {
+    justify-content: flex-start; /* Alinha o logotipo à esquerda */
+  }
+
+  .logo img {
+    width: 230px; /* Ajusta o tamanho da imagem do logotipo para telas maiores */
+  }
+
+  /* Ajusta o tamanho dos ícones para telas maiores */
+  .social-icon img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* Estilo para os ícones de redes sociais */
+.social-icon {
+  display: inline-block;
+  margin-right: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Ajustar o tamanho dos ícones para telas maiores */
+.social-icon img {
+  width: 23px; /* Ajuste o tamanho desejado para telas maiores */
+  height: 23px; /* Mantenha a proporção da altura */
+  margin-top: 2px;
+}
+
+
+/* Estilo para os ícones de redes sociais no header */
+.social-media.hide-social-icons {
+  display: none;
+}
+
+/* Estilo para os ícones de redes sociais no menu mobile */
+.social-media-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: fixed;
+  bottom: 10px; /* Distância a partir do canto inferior */
+  right: 10px; /* Distância a partir do canto direito */
+  z-index: 999; /* Certifique-se de que estejam acima de outros elementos */
+}
+
+.social-icon {
+  display: inline-block;
+  margin: 5px 0; /* Espaçamento entre os ícones */
+}
+
+.social-icon img {
+  width: 30px; /* Tamanho dos ícones */
+  height: 30px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .hide-social-icons {
+    display: flex; /* Exibir os ícones no header */
+  }
+
+  .social-media-mobile {
+    display: flex; /* Exibir os ícones no menu mobile */
+  }
+}
+
+
+/* Ícone do instagram */
+.social-icon img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px; /* Espaçamento do ícone para esquerda */
+}
+
+
+
+/* Estilo para os ícones de redes sociais no header */
+.social-media.hide-social-icons {
+  display: none;
+}
+
+/* Estilo para os ícones de redes sociais no menu mobile */
+.social-media-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .hide-social-icons {
+    display: flex; /* Exibir os ícones no header */
+    justify-content: flex-end; /* Alinhar os ícones à direita */
+    padding: 0 10px; /* Adicionar espaço entre os ícones e o logo */
+    margin-right: 10px; /* Adicionar espaço à direita para separar do menu "X" */
+  }
+
+  .social-media-mobile {
+    display: flex; /* Exibir os ícones no menu mobile */
+    justify-content: center; /* Centralizar os ícones no menu mobile */
+    margin-top: 30px; /* Adicionar espaço entre os links de navegação e os ícones */
+  }
+}
+
+/* Adicione a seguinte regra CSS para centralizar a logo no header em telas maiores */
+@media screen and (min-width: 769px) {
+  .logo {
+    flex: 1; /* Ocupa o espaço disponível no centro */
+    display: flex;
+    justify-content: center;
+  }
+
+  .left-nav {
+    flex: 1; /* Ocupa o espaço disponível à esquerda */
+  }
+
+  .social-media {
+    flex: 1; /* Ocupa o espaço disponível à direita */
+    display: flex;
+    justify-content: flex-end; /* Alinha os ícones à direita */
+    padding-right: 1px; /* Adiciona um espaço à direita para separar dos ícones */
+  }
+}
+
+
+
+
+/* Media query para telas maiores que 768 pixels */
+@media screen and (min-width: 769px) {
+  .menu-icon {
+    display: none; /* Esconde o ícone do menu */
+  }
+
+  .left-nav {
+    display: flex; /* Exibe a navegação à esquerda */
+  }
+
+  .social-media {
+    display: flex; /* Exibe os ícones de redes sociais no menu */
+  }
+
+  .left-nav.active {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .left-nav li {
+    padding: 0 10px;
+  }
+
+  .logo {
+    justify-content: flex-start;
+  }
+
+  .logo img {
+    width: 230px;
+  }
+}
+
+
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-gallery img {
+  width: 60%;
+  max-height: 70vh;
+  object-fit: cover;
+  cursor: pointer;
+  margin: 10px; /* Adiciona um espaçamento entre as imagens */
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 9999;
+  display: flex;
+  align-items: center; /* Centraliza verticalmente */
+}
+
+.modal-content {
+  display: block;
+  width: auto;
+  height: 80vh;
+  max-width: 90%;
+  max-height: 80vh;
+  margin: 0 auto;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.prev-btn {
+  left: 20px;
+}
+
+.next-btn {
+  right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .image-gallery img {
+    width: 100%;
+  }
+  
+  .modal-content {
+    max-height: 50vh;
+    max-height: 40vh;
+  }
+}
+
+/* Estilo para o botão "Subir ao Topo" */
+.scroll-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  z-index: 999;
+  opacity: 0.7;
+}
+
+.scroll-to-top:hover {
+  opacity: 1;
+}
+
+/* Estilizar o ícone para ser uma seta apontando para cima */
+.fa-arrow-up {
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-135deg);
+}
+
+
+/* Media query para telas maiores que 768 pixels */
+@media screen and (min-width: 769px) {
+.social-icon img {
+  width: 23px; /* Ajuste o tamanho desejado para telas maiores */
+  height: 23px; /* Mantenha a proporção da altura */
+  margin-top: 2px;
+}
+}
