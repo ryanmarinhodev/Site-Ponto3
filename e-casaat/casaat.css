@@ -36,12 +36,10 @@ header {
 .logo img {
   width: 230px; /* Ajustar o tamanho da imagem do logotipo para telas maiores */
 }
-
 .social-icon img {
   width: 20px;
   margin-right: 10px;
 }
-
 .menu-icon {
   display: none;
   cursor: pointer;
@@ -166,8 +164,6 @@ header {
   font-size: 21px; /* Aumentar o tamanho de fonte desejado */
   font-family: 'Play', sans-serif;
 }
-
-
   .mobile-nav a {
     color: #fff;
     text-decoration: none;
@@ -196,8 +192,6 @@ header {
   height: 100%;
   z-index: 9999; /* Ajuste o z-index para garantir que o menu fique acima de outros elementos */
 }
-
-
 .mobile-nav a {
   color: #333; /* Alterando a cor dos links para preto (#333) */
   text-decoration: none;
@@ -205,7 +199,6 @@ header {
   display: block; /* Adicionando essa propriedade para que os links ocupem a largura total disponível */
   text-align: center; /* Centralizando o texto dos links */
 }
-
 /* Estilo para o ícone "X" */
   .close-icon {
     position: absolute;
@@ -274,8 +267,6 @@ header {
   height: 23px; /* Mantenha a proporção da altura */
   margin-top: 2px;
 }
-
-
 /* Estilo para os ícones de redes sociais no header */
 .social-media.hide-social-icons {
   display: none;
@@ -312,8 +303,6 @@ header {
     display: flex; /* Exibir os ícones no menu mobile */
   }
 }
-
-
 /* Ícone do instagram */
 .social-icon img {
   width: 20px;
@@ -321,19 +310,14 @@ header {
   border-radius: 50%;
   margin-right: 10px; /* Espaçamento do ícone para esquerda */
 }
-
-
-
 /* Estilo para os ícones de redes sociais no header */
 .social-media.hide-social-icons {
   display: none;
 }
-
 /* Estilo para os ícones de redes sociais no menu mobile */
 .social-media-mobile {
   display: none;
 }
-
 @media screen and (max-width: 768px) {
   .hide-social-icons {
     display: flex; /* Exibir os ícones no header */
@@ -368,10 +352,6 @@ header {
     padding-right: 1px; /* Adiciona um espaço à direita para separar dos ícones */
   }
 }
-
-
-
-
 /* Media query para telas maiores que 768 pixels */
 @media screen and (min-width: 769px) {
   .menu-icon {
@@ -403,15 +383,11 @@ header {
     width: 230px;
   }
 }
-  
-  
-  
   .image-gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
-  
   .image-gallery img {
     width: 60%;
     max-height: 70vh;
@@ -419,7 +395,6 @@ header {
     cursor: pointer;
     margin: 10px; /* Adiciona um espaçamento entre as imagens */
   }
-  
   .modal {
     display: none;
     position: fixed;
@@ -432,7 +407,6 @@ header {
     display: flex;
     align-items: center; /* Centraliza verticalmente */
   }
-  
   .modal-content {
     display: block;
     width: auto;
@@ -441,7 +415,6 @@ header {
     max-height: 80vh;
     margin: 0 auto;
   }
-  
   .close-btn {
     position: absolute;
     top: 20px;
@@ -450,7 +423,6 @@ header {
     color: #fff;
     cursor: pointer;
   }
-  
   .prev-btn,
   .next-btn {
     position: absolute;
@@ -460,7 +432,6 @@ header {
     color: #fff;
     cursor: pointer;
   }
-  
   .prev-btn {
     left: 20px;
   }
@@ -479,7 +450,6 @@ header {
       max-height: 40vh;
     }
   }
-  
   /* Estilo para o botão "Subir ao Topo" */
   .scroll-to-top {
     display: none;
@@ -498,11 +468,9 @@ header {
     z-index: 999;
     opacity: 0.7;
   }
-  
   .scroll-to-top:hover {
     opacity: 1;
   }
-  
   /* Estilizar o ícone para ser uma seta apontando para cima */
   .fa-arrow-up {
     border: solid #fff;
@@ -511,8 +479,6 @@ header {
     padding: 3px;
     transform: rotate(-135deg);
   }
-  
-  
   /* Media query para telas maiores que 768 pixels */
 @media screen and (min-width: 769px) {
   .social-icon img {

@@ -66,13 +66,7 @@ function goToHomePage() {
 // Adicionando o evento de clique à logo
 logoLink.addEventListener("click", goToHomePage);
 
-
-
-
-
-
 // Redirecionamento de imagens: 
-
 function redirecionar1() {
   window.location = "../a-casamd/amd.html"
 }
@@ -127,9 +121,21 @@ function redirecionar17() {
 function redirecionar18() {
   window.location = "../r-semog/semog.html"
 }
-
-
-
+function redirecionar19() {
+  window.location = "../mostra-2024/mostra24.html"
+}
+function redirecionar20() {
+  window.location = "../domus/domus.html"
+}
+function redirecionar21() {
+  window.location = "../casatee/tee.html"
+}
+function redirecionar22() {
+  window.location = "../sqc/sql.html"
+}
+function redirecionar23() {
+  window.location = "../mem/mem.html"
+}
 
 // Função para adicionar a classe 'active' ao link selecionado
 function setActiveLink(link) {
@@ -183,9 +189,6 @@ window.addEventListener('load', () => {
     }
   }
 });
-
-
-
 
 // Botão de subir ao topo
 const scrollToTopBtn = document.getElementById("scrollToTopBtn");

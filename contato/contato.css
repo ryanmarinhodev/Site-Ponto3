@@ -408,63 +408,89 @@ header {
 
 
 
-/* Adicione este CSS para estilizar o formulário de contato */
-.contact-form {
+
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
-  padding: 30px;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 10px;
-  margin-top: 80px;
+  text-align: center;
+  padding: 20px;
 }
 
-.contact-input {
-  width: 100%;
-  max-width: 500px;
-  margin-bottom: 50px;
-  padding: 17px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+.imagem {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column; /* Os elementos de texto ficarão um abaixo do outro */
+  align-items: center; /* Centraliza horizontalmente os elementos de texto */
+  text-align: center; /* Centraliza o texto */
+}
+
+h1 {
+  font-size: 28px;
+  margin-top: 20px;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: 'Play', sans-serif;
+  font-weight: normal; /* Remova o negrito do h1 */
+}
+
+p {
+  font-size: 18px;
+  margin-top: 10px;
+  line-height: 1.6;
+  color: #2C2C2C;
   font-family: 'Play', sans-serif;
 }
 
-.contact-button {
-  background-color: transparent; /* Alterar a cor de fundo para transparente */
-  color: #333; /* Definir a cor do texto */
-  border: none;
-  border-radius: 4px;
-  padding: 10px 20px;
-  cursor: pointer;
-  margin-top: 0; /* Remover o valor de margem superior */
-  margin-left: 20px; /* Adicionar margem à esquerda para mover o botão para a esquerda */
-  font-size: 16px;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Adicionar transição suave para hover */
+a {
+  text-decoration: none;
+  color: #666;
+  transition: color 0.3s ease;
 }
 
-.contact-button:hover {
-  background-color: #333; /* Alterar a cor de fundo no hover */
-  color: #fff; /* Alterar a cor do texto no hover */
+a:hover {
+  color: #004171;
 }
 
-.location-message {
-  text-align: center;
-  margin-bottom: 30px;
-  font-size: 15px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #808080;
-}
+/* Estilos para telas maiores que 768px */
+@media screen and (min-width: 1100px) {
+  .container {
+    flex-direction: column; /* Altere para uma coluna para empilhar os elementos verticalmente */
+    align-items: center; /* Centralize horizontalmente todos os elementos */
+    text-align: center; /* Centralize o texto */
+  }
 
-.footer {
-  text-align: center;
-  font-size: 14px;
-  color: 	#A9A9A9;
-  margin-top: auto; /* Para colocar o footer no final da página */
-  padding: 20px; /* Adicione algum espaço ao redor do footer */
-  width: 100%; /* Ocupar toda a largura */
-  position: fixed; /* Fixar o footer no final da página */
-  bottom: 0; /* Alinhar o footer ao fundo */
-  left: 0; /* Alinhar o footer à esquerda */
-}
+  .imagem {
+    max-width: 50%;
+    height: auto;
+    max-height: none;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
 
+  h1 {
+    font-size: 28px;
+    margin-top: 20px;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: 'Play', sans-serif;
+  }
+
+  p {
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 1.6;
+    color: #2C2C2C;
+    font-family: 'Play', sans-serif;
+  }
+}

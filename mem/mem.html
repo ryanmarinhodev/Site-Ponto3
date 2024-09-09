@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./sobre.css">
+  <link rel="stylesheet" href="./mem.css">
   <title>PONTO3 ARQUITETURA</title>
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Roboto+Condensed:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Play&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@600&family=Viga&display=swap" rel="stylesheet">
   <link rel="icon" href="../MONOGRAMA_CINZA (1).png">
+</head>
+  
 </head>
 <body>
   <header>
@@ -21,17 +22,17 @@
   
     <!-- Navegação esquerda -->
     <nav class="left-nav">
-      <a href="sobre.html">Escritório</a>
+      <a href="../sobre-nós/sobre.html">Escritório</a>
       <a href="../contato/contato.html">Contato</a>
     </nav>
   
-   <!-- Logotipo -->
+    <!-- Logotipo -->
     <a href="../index.html" onclick="window.scrollTo(0, 0);">
-    <div class="logo">
-      <img src="../images/imagem1.jpg" alt="Logo da Empresa">
-    </div>
-    </a>
-
+        <div class="logo">
+          <img src="../images/logo-ponto.webp" alt="Logo da Empresa">
+        </div>
+        </a>
+  
     <!-- Redes sociais -->
     <nav class="social-media hide-social-icons">
       <a href="https://www.instagram.com/ponto3arquitetura/" target="_blank" class="social-icon"><img src="../images/logo-instagram.png" alt="Instagram"></a>
@@ -39,40 +40,54 @@
     <div class=".no-scrollbar"></div>
   </header>
 
-  <div class="centered-content">
-    <img src="../sobre-nós/IMG_5653.JPG" alt="Imagem">
-    <div>
-      <h1 class="h1">O ESCRITÓRIO</h1>
-      <p>- PONTO3 ARQUITETURA por Gesiel Soares e Raphael Barbosa, desde 2013. Em seus projetos, as linhas retas e curvas se equilibram de forma sutil e se harmonizam através da matéria-prima de bases neutras, com um resultado atemporal e sofisticado. “Buscamos constantemente superar expectativas, criando ambientes que reflitam a personalidade e as necessidades de nossos clientes”.
-
-        Da estação de trabalho do duo emergem residenciais, comerciais e interiores que transbordam para todo o território nacional. Acreditam que a arquitetura vai além de criar estruturas físicas, é a arte de transformar espaços em lugares significativos e cheios de propósito, trazendo aos seus projetos inovação, tecnologia e avanço.</p>
-    </div>
-  </div>
-
-
-
   <!-- Tela de navegação para dispositivos móveis -->
   <div class="mobile-nav" id="mobileNav">
     <!-- Ícone "X" para fechar -->
     <div class="close-icon" id="closeIcon">&times;</div>
 
     <!-- Links de navegação -->
-    <a href="sobre.html">Escritório</a>
+    <a href="../sobre-nós/sobre.html">Escritório</a>
     <a href="../contato/contato.html">Contato</a>
 
     <!-- Redes sociais no menu mobile -->
     <nav class="social-media-mobile">
       <a href="https://www.instagram.com/ponto3arquitetura/" target="_blank"" class="social-icon"><img src="../images/logo-instagram.png" alt="Instagram"></a>
     </nav>
-
-    <script src="sobre.js"></script>
   </div>
 
-   <!-- Botão para subir ao topo -->
+  <section class="image-gallery">
+      <img src="/mem/aptmem/A.webp" alt="Imagem 1">
+      <img src="/mem/aptmem/B.webp" alt="Imagem 2">
+      <img src="/mem/aptmem/C.webp" alt="Imagem 3">
+      <img src="/mem/aptmem/D.webp" alt="Imagem 4">
+      <img src="/mem/aptmem/E.webp" alt="Imagem 5">
+      <img src="/mem/aptmem/F.webp" alt="Imagem 6">
+      <img src="/mem/aptmem/G.webp" alt="Imagem 7">
+      <img src="/mem/aptmem/H.webp" alt="Imagem 8">
+      <img src="/mem/aptmem/I.webp" alt="Imagem 9">
+      <img src="/mem/aptmem/J.webp" alt="Imagem 10">
+      <img src="/mem/aptmem/K.webp" alt="Imagem 11">
+      <img src="/mem/aptmem/L.webp" alt="Imagem 12">
+      <img src="/mem/aptmem/M.webp" alt="Imagem 13">
+      <img src="/mem/aptmem/O.webp" alt="Imagem 14">
+      <img src="/mem/aptmem/P.webp" alt="Imagem 15">
+      <img src="/mem/aptmem/Q.webp" alt="Imagem 16">
+
+  </section>
+
+  <div class="modal" style="display: none;">
+    <span class="close-btn hidden" style="position: absolute; top: 20px; right: 22px; font-size: 34px; cursor: pointer;">&times;</span>
+    <span class="prev-btn hidden" style="position: absolute; top: 50%; left: 22px; font-size: 56px; cursor: pointer; transform: translateY(-50%);">&#8249;</span>
+    <span class="next-btn hidden" style="position: absolute; top: 50%; right: 20px; font-size: 56px; cursor: pointer; transform: translateY(-50%);">&#8250;</span>
+    <img class="modal-content" src="" alt="">
+</div>
+
+  <!-- Botão para subir ao topo -->
 <div id="scrollToTopBtn" class="scroll-to-top">
   <i class="fa fa-arrow-up"></i>
 </div>
-
-
+  
+  <script src="./mem.js"></script>
+ 
 </body>
 </html>

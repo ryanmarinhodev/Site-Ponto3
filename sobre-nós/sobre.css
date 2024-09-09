@@ -422,12 +422,13 @@ header {
 }
 
 .centered-content div {
-  width: 60%;
-  padding: 0 20px;
+  width: 100%;            /* Faz o texto ocupar 100% da largura disponível */
+  max-width: 1000px;      /* Limita a largura máxima para evitar que fique muito esticado */
+  padding: 0 20px;        /* Adiciona um espaço interno */
 }
 
 .centered-content h1 {
-  font-size: 19px;
+  font-size: 20px;
   margin-bottom: 10px;
   color: #A9A9A9;
   font-family: 'Play', sans-serif;
@@ -438,6 +439,7 @@ header {
   color: #666;
   line-height: 1.6;
   font-family: 'Play', sans-serif;
+  text-align: justify;    /* Justifica o texto para alinhar às margens */
 }
 
 /* Media query para ajustar em telas menores */
